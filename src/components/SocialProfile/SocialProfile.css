@@ -1,0 +1,72 @@
+:root {
+  --vGreen: hsl(75, 94%, 57%);
+  --vWhite: hsl(0, 0%, 100%);
+  --vGrey700: hsl(0, 0%, 20%);
+  --vGrey800: hsl(0, 0%, 12%);
+  --vGrey900: hsl(0, 0%, 8%);
+  --FontSize: 14px;
+}
+
+body {
+  background-color: var(--vGrey900);
+}
+
+.card * {
+  color: var(--vWhite);
+  font-size: var(--FontSize);
+}
+
+.card {
+  background-color: var(--vGrey800);
+  
+  border-radius: 6px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  gap: 2em;
+  width: 80%;
+  height: auto;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 10em;
+  height: auto;
+  margin: auto;
+}
+
+.name {
+
+}
+
+.location {
+  color: var(--vGreen)
+}
+
+.description {
+
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.link-box {
+  background-color: var(--vGrey700);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+.link-box:hover {
+  background-color: var(--vGreen);
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .card{
+    width: 24em;
+  }
+}
